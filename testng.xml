@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    Option A: Register the AIFailureListener globally here so it applies
+    to ALL test classes in the suite without touching each runner.
+
+    Option B: Use @Listeners(AIFailureListener.class) on individual runner classes.
+    Both approaches work — choose what fits your project structure.
+-->
+
+<suite name="AI Test Failure Analyzer — Example Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.aianalyzer.listeners.AIFailureListener"/>
+    </listeners>
+
+    <test name="Example Tests">
+        <classes>
+            <class name="com.aianalyzer.runner.ExampleRunner"/>
+        </classes>
+    </test>
+
+</suite>
