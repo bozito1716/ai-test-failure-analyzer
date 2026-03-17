@@ -1,4 +1,4 @@
-# 🤖 AI Test Failure Analyzer
+# 🤖 AI Test Failure Analyzer for Selenium/Appium
 
 **Drop AI-powered root cause analysis into any Selenium + TestNG project in minutes.**
 
